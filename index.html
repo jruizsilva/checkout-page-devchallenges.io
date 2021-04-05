@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page - my solution</title>
+    <link rel="icon" href="img/devchallenges.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta
+      name="description"
+      content="Checkout Page Project #6 devchallenges.io"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container h-margin">
+      <header class="header">
+        <h1 class="header__title main-text-color">Checkout</h1>
+      </header>
+      <main class="main">
+        <section class="shoppping-cart">
+          <div class="shopping-cart__items">
+            <div class="shopping-cart__product">
+              <img
+                src="img/photo1.png"
+                alt="product photo 1"
+                class="shopping-cart__img"
+              />
+              <div class="shopping-cart__content">
+                <h3 class="shopping-cart__product-name main-text-color">
+                  Vintage Backbag
+                </h3>
+                <div class="shopping-cart__prices">
+                  <p class="shopping-cart__discount-price orange-text-color">
+                    $54.99
+                  </p>
+                  <p class="shopping-cart__normal-price main-text-color">
+                    $94.99
+                  </p>
+                </div>
+                <div class="shopping-cart__quantity">
+                  <input
+                    type="number"
+                    name="quantity"
+                    id="quantity"
+                    class="shopping-cart__product-quantity"
+                    placeholder="1"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="shopping-cart__product">
+              <img
+                src="img/photo2.png"
+                alt="product photo 2"
+                class="shopping-cart__img"
+              />
+              <div class="shopping-cart__content">
+                <h3 class="shopping-cart__product-name main-text-color">
+                  Levi Shoes
+                </h3>
+                <div class="shopping-cart__prices">
+                  <p class="shopping-cart__discount-price orange-text-color">
+                    $74.99
+                  </p>
+                  <p class="shopping-cart__normal-price main-text-color">
+                    $124.99
+                  </p>
+                </div>
+                <div class="shopping-cart__quantity">
+                  <input
+                    type="number"
+                    name="quantity"
+                    id="quantity"
+                    class="shopping-cart__product-quantity"
+                    placeholder="1"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="costs dark-main-text-color">
+            <div class="cost__item">
+              <p class="cost__name">Shipping</p>
+              <p class="cost__product">$19</p>
+            </div>
+            <div class="cost__item">
+              <p class="cost__name">Total</p>
+              <p class="cost__product">$148.98</p>
+            </div>
+          </div>
+        </section>
+        <form action="#" class="form">
+          <section class="contact">
+            <h2 class="contact__title dark-main-text-color">
+              Contact infomation
+            </h2>
+            <div class="contact__items">
+              <div class="contact__item">
+                <label for="email" class="contact__label secondary-text-color"
+                  >E-mail</label
+                >
+                <div class="contact__input">
+                  <input
+                    type="email"
+                    id="email"
+                    class="contact__input-tag light-secondary-text-color"
+                    placeholder="Enter your email..."
+                    autocomplete="off"
+                  />
+                  <span class="material-icons contact__icon">mail</span>
+                </div>
+              </div>
+              <div class="contact__item">
+                <label for="tel" class="contact__label secondary-text-color"
+                  >Phone</label
+                >
+                <div class="contact__input">
+                  <input
+                    type="tel"
+                    id="tel"
+                    class="contact__input-tag light-secondary-text-color"
+                    placeholder="Enter your phone..."
+                    autocomplete="off"
+                  />
+                  <span class="material-icons contact__icon">phone</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="address">
+            <h2 class="contact__title dark-main-text-color">
+              Shipping address
+            </h2>
+            <div class="contact__items">
+              <div class="contact__item">
+                <label for="name" class="contact__label secondary-text-color"
+                  >Full name</label
+                >
+                <div class="contact__input">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="contact__input-tag light-secondary-text-color"
+                    placeholder="Rodney Cotton"
+                    autocomplete="off"
+                  />
+                  <span class="material-icons contact__icon"
+                    >account_circle</span
+                  >
+                </div>
+              </div>
+              <div class="contact__item">
+                <label for="address" class="contact__label secondary-text-color"
+                  >Address</label
+                >
+                <div class="contact__input">
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    class="contact__input-tag light-secondary-text-color"
+                    placeholder="Your address.."
+                    autocomplete="off"
+                  />
+                  <span class="material-icons contact__icon">home</span>
+                </div>
+              </div>
+              <div class="contact__item">
+                <label for="name" class="contact__label secondary-text-color"
+                  >City</label
+                >
+                <div class="contact__input">
+                  <input
+                    type="text"
+                    id="name"
+                    name="city"
+                    class="contact__input-tag light-secondary-text-color"
+                    placeholder="Your city.."
+                    autocomplete="off"
+                  />
+                  <span class="material-icons contact__icon"
+                    >location_city</span
+                  >
+                </div>
+              </div>
+              <div class="contact__flex-container">
+                <div class="contact__select-container">
+                  <p class="contact__select-paragraph">Country</p>
+                  <div class="contact__select-content">
+                    <select name="country" id="country" class="contact__select">
+                      <option
+                        value="Your country..."
+                        selected
+                        disabled
+                        class="contact__option"
+                      >
+                        Your country...
+                      </option>
+                      <option value="argentina" class="contact__option">
+                        Argentina
+                      </option>
+                      <option value="paraguay" class="contact__option">
+                        Paraguay
+                      </option>
+                      <option value="chile" class="contact__option">
+                        Chile
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="contact__item">
+                  <label
+                    for="postal-code"
+                    class="contact__label secondary-text-color"
+                    >City</label
+                  >
+                  <div class="contact__input">
+                    <input
+                      type="text"
+                      id="postal-code"
+                      name="postal-code"
+                      class="contact__input-tag light-secondary-text-color"
+                      placeholder="Your postal code.."
+                      autocomplete="off"
+                    />
+                    <span class="material-icons contact__icon"
+                      >markunread_mailbox</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="save-address">
+              <input
+                type="checkbox"
+                name="save-address"
+                id="save-address"
+                class="save-address__input"
+              />
+              <label
+                for="save-info"
+                class="save-address__label secondary-text-color"
+                >Save this information for next time</label
+              >
+            </div>
+          </section>
+          <div class="form__btn">
+            <input
+              type="submit"
+              value="Continue"
+              class="orange-background-color white-text-color form__submit"
+            />
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer class="footer">
+      <p class="footer__paragraph footer-text-color">
+        created by
+        <span class="footer__author font-weight-700">Jonathan Ruiz Silva</span>
+        -
+        <span class="page-reference">devChallenges.io</span>
+      </p>
+    </footer>
+  </body>
+</html>
